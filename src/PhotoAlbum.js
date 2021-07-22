@@ -27,7 +27,7 @@ export default class PhotoAlbum extends Component {
         const photoCard = this.state.album.map((photo, index) => (
             <div class="cards-list " key={index}>
                     <div class="card 1">
-                        <div class="card_image"> <img src={photo.thumbnailUrl} /> </div>
+                        <div class="card_image"> <img src={photo.thumbnailUrl} alt={photo.title}/> </div>
                         <div class="card_title title-white">
                             <p>{photo.title}</p>
                         </div>
